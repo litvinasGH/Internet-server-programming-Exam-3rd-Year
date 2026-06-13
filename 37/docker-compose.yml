@@ -1,0 +1,21 @@
+services:
+
+  postgres:
+    image: postgres:17
+
+    environment:
+      POSTGRES_DB: celebrities
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+    ports:
+      - "5432:5432"
+
+  graphql:
+    build: .
+
+    ports:
+      - "8080:8080"
+
+    depends_on:
+      - postgres

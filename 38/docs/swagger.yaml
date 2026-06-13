@@ -1,0 +1,113 @@
+basePath: /
+definitions:
+  main.User:
+    properties:
+      id:
+        type: integer
+      name:
+        type: string
+    type: object
+host: localhost:8080
+info:
+  contact: {}
+  description: REST API on Iris
+  title: Iris Swagger API
+  version: "1.0"
+paths:
+  /users:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/main.User'
+            type: array
+      summary: Get all users
+      tags:
+      - Users
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: User
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/main.User'
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/main.User'
+      summary: Create user
+      tags:
+      - Users
+  /users/{id}:
+    delete:
+      parameters:
+      - description: User ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Delete user
+      tags:
+      - Users
+    get:
+      parameters:
+      - description: User ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/main.User'
+      summary: Get user by id
+      tags:
+      - Users
+    put:
+      consumes:
+      - application/json
+      parameters:
+      - description: User ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      - description: User
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/main.User'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/main.User'
+      summary: Update user
+      tags:
+      - Users
+swagger: "2.0"

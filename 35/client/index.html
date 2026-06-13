@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>WebSocket Client</title>
+</head>
+<body>
+
+    <div id="message">
+
+    </div>
+
+<script>
+    const socket = new WebSocket("ws://localhost:8080/ws");
+    const div = document.getElementById('message');
+
+    socket.onopen = () => {
+
+        console.log("Connected");
+        div.innerHTML += "<p>Connected</p>"
+
+        setInterval(() => {
+            socket.send("Hello from client");
+        }, 3000);
+
+        setTimeout(() => {
+            console.log("Client closing");
+            div.innerHTML += "<p>Client closing</p>"
+            socket.close();
+        }, 10000);
+    };
+
+    socket.onmessage = (event) => {
+        console.log("Server:", event.data);
+        div.innerHTML += "<p>Server:" + event.data + "</p>"
+    };
+
+    socket.onclose = () => {
+        console.log("Disconnected");
+        div.innerHTML += "<p>Disconnected</p>"
+    };
+</script>
+
+</body>
+</html>
