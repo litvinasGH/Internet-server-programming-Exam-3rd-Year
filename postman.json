@@ -1,0 +1,588 @@
+{
+  "info": {
+    "_postman_id": "48d90fcb-856d-4521-84ff-b57f63ce6ab4",
+    "name": "EXAM ISP",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "43256550",
+    "_collection_link": "https://go.postman.co/collection/43256550-48d90fcb-856d-4521-84ff-b57f63ce6ab4?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "22",
+      "item": [
+        {
+          "name": "Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}",
+              "host": [
+                "{{baseURL}}"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "23",
+      "item": [
+        {
+          "name": "A",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/A",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "A"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "B",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/B",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "B"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "24",
+      "item": [
+        {
+          "name": "POST",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Владимир\",\n    \"age\": 20\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}",
+              "host": [
+                "{{baseURL}}"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "25",
+      "item": [
+        {
+          "name": "POST",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Владимир\",\n    \"age\": 20\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/user",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "user"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "26",
+      "item": [
+        {
+          "name": "POST",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "name",
+                  "value": "Владимир",
+                  "type": "text",
+                  "uuid": "a717c58a-242a-4645-8da4-f2def3a1daff"
+                },
+                {
+                  "key": "age",
+                  "value": "20",
+                  "type": "text",
+                  "uuid": "3117ef07-90bf-4a0f-b94f-e07e3443f3ee"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseURL}}/user/1",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "user",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "27",
+      "item": [
+        {
+          "name": "POST",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Владимир\",\n    \"age\": 20\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/user/1",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "user",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "28",
+      "item": [
+        {
+          "name": "GET",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/user/1",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "user",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "29",
+      "item": [
+        {
+          "name": "Request",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"Владимир\",\n    \"age\": 20\n}"
+            },
+            "url": {
+              "raw": "{{baseURL}}/user?name=Vladimir&age=20",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "user"
+              ],
+              "query": [
+                {
+                  "key": "name",
+                  "value": "Vladimir"
+                },
+                {
+                  "key": "age",
+                  "value": "20"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "30",
+      "item": [
+        {
+          "name": "Download",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/download",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "download"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "31",
+      "item": [
+        {
+          "name": "Data",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "name",
+                  "value": "Vladimir",
+                  "type": "text",
+                  "uuid": "922dac7b-ba6e-4a60-8090-948413c71ad1"
+                },
+                {
+                  "key": "age",
+                  "value": "20",
+                  "type": "text",
+                  "uuid": "1ab1189a-3a1e-40af-ae34-b5721ef0cc93"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseURL}}/data",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "data"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "32",
+      "item": [
+        {
+          "name": "query",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/search?q=golang",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "search"
+              ],
+              "query": [
+                {
+                  "key": "q",
+                  "value": "golang"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "33",
+      "item": [
+        {
+          "name": "RPS",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[\n  {\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"sum\",\n    \"id\": 1,\n    \"params\": {\n      \"a\": 100,\n      \"b\": 200\n    }\n  }\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/rpc",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "rpc"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Batch Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[\n  {\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"sum\",\n    \"params\": {\n      \"a\": 10,\n      \"b\": 20\n    },\n    \"id\": 1\n  },\n  {\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"mul\",\n    \"params\": {\n      \"a\": 5,\n      \"b\": 7\n    },\n    \"id\": 2\n  }\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/rpc",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "rpc"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Notification",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[\n  {\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"sum\",\n    \"params\": {\n      \"a\": 100,\n      \"b\": 200\n    }\n  }\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/rpc",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "rpc"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "37",
+      "item": [
+        {
+          "name": "Get All Celebrities",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"query\":\"{ celebrities { id fullname nationality } }\"}"
+            },
+            "url": {
+              "raw": "{{baseURL}}graphql",
+              "host": [
+                "{{baseURL}}graphql"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Celebrity By ID",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"query\":\"{ celebrity(id: 1) { id fullname nationality } }\"}"
+            },
+            "url": {
+              "raw": "{{baseURL}}graphql",
+              "host": [
+                "{{baseURL}}graphql"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Celebrity",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"query\":\"mutation { createCelebrity(id: 4, fullname: \\\"Tom Cruise\\\", nationality: \\\"USA\\\") { id fullname nationality } }\"}"
+            },
+            "url": {
+              "raw": "{{baseURL}}graphql",
+              "host": [
+                "{{baseURL}}graphql"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Celebrity",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"query\":\"mutation { updateCelebrity(id: 4, fullname: \\\"Thomas Cruise\\\", nationality: \\\"USA\\\") { id fullname nationality } }\"}"
+            },
+            "url": {
+              "raw": "{{baseURL}}graphql",
+              "host": [
+                "{{baseURL}}graphql"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Celebrity",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"query\":\"mutation { deleteCelebrity(id: 4) }\"}"
+            },
+            "url": {
+              "raw": "{{baseURL}}graphql",
+              "host": [
+                "{{baseURL}}graphql"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "port",
+      "value": ""
+    },
+    {
+      "key": "baseURL",
+      "value": ""
+    }
+  ]
+}
